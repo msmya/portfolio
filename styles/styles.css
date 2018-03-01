@@ -1,0 +1,208 @@
+:root{
+ --primary-color: #603A40;
+ --secondary-color: #8D3B72;
+ --accent-color: black;
+ --bg-color: #8A7090;
+ --shadow-color: #8C7A6B;
+ font-family: helvetica;
+ box-sizing:  border-box;
+ /*select your own color scheme at coolors.co*/
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+/*Navbar CSS*/
+nav {
+  background: var(--secondary-color);
+  color: var(--accent-color);
+  position: fixed;
+  width: 100%;
+  display: flex;
+}
+
+nav a{
+  text-decoration: none;
+  color: inherit;
+  padding: 1em;
+  transition: background-color 0.5s;
+}
+
+nav a:first-child{
+  margin-left: 10%;
+  margin-right: auto;
+}
+nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+
+}
+
+nav ul li{
+  list-style-type: none;
+  padding: 1rem;
+}
+
+nav ul:first-child{
+  margin-left: 10%;
+}
+
+nav a:last-child{
+  margin-right: 10%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover{
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/*Header CSS*/
+header{
+  display: flex;
+  height: 100vh;
+  background: radial-gradient(var(--bg-color) 60%, var(--accent-color));
+}
+
+header div.headerFigure{
+  margin: auto;
+  width: 200px;
+}
+
+img{
+  width: 120%;
+  border-radius: 14px;
+  box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+}
+
+
+header div.headerFigure h2{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+header div.headerFigure p{
+  text-align: center;
+}
+
+/*Quote block css*/
+blockquote{
+  margin: 3em auto;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5em;
+  width: 60%;
+}
+
+blockquote p:first-child::before,
+blockquote p:first-child::after{
+  content: '"'
+}
+blockquote #saidBy{
+  text-align: right;
+  font-size: 0.8em;
+}
+
+#imgBox:hover{ box-shadow: 0 0 10px purple;}
+#imgBox:hover{ box-shadow: 0 0 10px purple;}
+#imgBox:hover{ box-shadow: 0 0 10px purple;}
+#imgBox:hover{ box-shadow: 0 0 10px purple;}
+
+/*Main Portfolio CSS*/
+main {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  justify-content: center;
+  text: black;
+}
+
+main figure {
+  margin: 0;
+  box-shadow: 1px solid var(--shadow-color);
+}
+
+main figure img {
+  width: 70%;
+}
+
+main figure figcaption h2,
+main figure figcaption p{
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0.5em 0 0 0;
+  padding: 0 1em;
+}
+
+/*Form styling CSS*/
+#contact {
+  margin: 3em auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1em;
+}
+
+#Map:hover{ box-shadow: 0 0 10px purple;}
+
+
+input[type=text], select, textarea{
+  margin: 5px 0;
+  width: 100%;
+  padding: 1em;
+  background: var(--bg-color)
+  border: 5px solid black;
+  border-left:  5px solid var(--primary-color);
+  border-radius: 0;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 12px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  float: right;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  margin-top: 5px;
+  background-color: var(--secondary-color);
+}
+
+#contact iframe {
+  width: 100%;
+  height: 100%;
+  min-width: 280px;
+  min-height: 280px;
+}
+
+footer{
+  background: var(--bg-color);
+  text-align: center;
+  padding: 3em 0;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--primary-color)
+}
