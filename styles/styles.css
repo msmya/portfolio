@@ -79,7 +79,7 @@ header div.headerFigure{
   width: 200px;
 }
 
-img{
+header img{
   width: 120%;
   border-radius: 14px;
   box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
@@ -123,7 +123,7 @@ main {
   margin: 0 auto;
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 1em;
   justify-content: center;
   text: black;
@@ -135,7 +135,7 @@ main figure {
 }
 
 main figure img {
-  width: 70%;
+  width: 100%;
 }
 
 main figure figcaption h2,
